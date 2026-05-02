@@ -1,0 +1,15 @@
+# Dependencies
+/node_modules
+/server/node_modules
+/client/node_modules
+
+# Next.js Build Artifacts
+/.next
+/out
+
+# Environment Variables (CRITICAL FOR SECURITY)
+.env
+.env.local
+.env.development
+#Complete dump
+pocketlancer_full_code.txt

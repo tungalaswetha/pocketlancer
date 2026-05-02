@@ -1,0 +1,47 @@
+{
+  "name": "pocketlancer-client",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.2.0",
+    "@capacitor/geolocation": "^8.0.0",
+    "@capacitor/push-notifications": "^8.0.0",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "@fullcalendar/react": "^6.1.20",
+    "autoprefixer": "^10.4.23",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "firebase-admin": "^13.7.0",
+    "framer-motion": "^12.29.2",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.2",
+    "react": "^19.2.1",
+    "react-dom": "19.2.1",
+    "react-leaflet": "^5.0.0",
+    "react-modal": "^3.16.3",
+    "recharts": "^3.7.0",
+    "socket.io-client": "^4.8.3",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/react-modal": "^3.16.3",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "16.1.2",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2"
+  }
+}

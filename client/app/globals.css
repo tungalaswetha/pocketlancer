@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/**
+ * ── DISABLE DARK MODE (Tailwind v4) ────────────────────────────
+ *
+ * Tailwind v4 uses @media (prefers-color-scheme: dark) by default,
+ * which ignores tailwind.config.js. This line overrides the built-in
+ * `dark` variant to ONLY fire when a `.dark` class exists on an ancestor.
+ * Since ThemeInit never adds `.dark`, every `dark:` class in the app
+ * becomes permanently inert — on desktop AND Android/Capacitor.
+ */
+@variant dark (&:where(.dark *));
+
+/* ── Force light mode everywhere ──────────────────────────────── */
+html,
+body {
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
+}
+
+/* Belt-and-suspenders: tell the browser this page is light-only */
+:root {
+  color-scheme: light;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --bottom-nav-height: 64px;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+.leaflet-container {
+  z-index: 0 !important;
+}

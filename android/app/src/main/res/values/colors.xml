@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors — slate design system -->
+    <color name="colorPrimary">#0F172A</color>       <!-- slate-900 — used for action bar -->
+    <color name="colorPrimaryDark">#0F172A</color>   <!-- slate-900 — status bar color -->
+    <color name="colorAccent">#3B82F6</color>        <!-- blue-500 — accent / FAB -->
+
+    <!-- Window background — must match globals.css bg-slate-50 and capacitor.config backgroundColor -->
+    <color name="windowBackground">#F8FAFC</color>   <!-- slate-50 -->
+
+    <!-- Launcher icon adaptive background -->
+    <color name="ic_launcher_background">#0F172A</color>
+</resources>
